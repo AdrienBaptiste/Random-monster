@@ -41,6 +41,6 @@ function changeLink () {
 }
 
 button.addEventListener('click', function() {
-    changeLink(lien);
+    changeLink();
 });
 
