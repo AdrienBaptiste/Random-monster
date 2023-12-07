@@ -1,4 +1,4 @@
-butvar id = 1;
+var id = 1;
 const imgContainer1 = document.querySelector(".container1 img");
 const imgContainer2 = document.querySelector(".container2 img");
 const imgContainer3 = document.querySelector(".container3 img");
@@ -27,7 +27,7 @@ button.addEventListener('click', function() {
 
 */
 function randomId () {
-    id = Math.floor(Math.random() * 3);
+    id = Math.floor(Math.random() * 4);
 }
 
 
@@ -41,6 +41,6 @@ function changeLink () {
 }
 
 button.addEventListener('click', function() {
-    changeLink();
+    changeLink(lien);
 });
 
