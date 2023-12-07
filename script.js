@@ -9,7 +9,7 @@ const button = document.querySelector(".button_container button");
 
 
 function randomId () {
-    id = Math.floor(Math.random() * 4);
+    id = Math.floor(Math.random() * 5);
     console.log(id);
 }
 
