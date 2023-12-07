@@ -27,7 +27,7 @@ button.addEventListener('click', function() {
 
 */
 function randomId () {
-    id = Math.floor(Math.random() * 4);
+    id = Math.floor(Math.random() * 3);
 }
 
 
