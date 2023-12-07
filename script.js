@@ -10,6 +10,7 @@ const button = document.querySelector(".button_container button");
 
 function randomId () {
     id = Math.floor(Math.random() * 3);
+    console.log(id);
 }
 
 function changeLink () {
