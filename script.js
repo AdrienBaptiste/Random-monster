@@ -5,7 +5,8 @@ var srcImg3 = "image/monstre1";
 const imgContainer1 = document.querySelector(".container1 img");
 const imgContainer2 = document.querySelector(".container2 img");
 const imgContainer3 = document.querySelector(".container3 img");
-const button = document.querySelector(".button_container button");
+const generateBtn = document.querySelector(".button_container .genererBtn");
+const downloadBtn = document.querySelector(".button_container .telechargerBtn");
 
 
 function randomId () {
@@ -22,7 +23,19 @@ function changeLink () {
     imgContainer3.src = "images/monstre" + id + ".png";
 }
 
-button.addEventListener('click', function() {
+generateBtn.addEventListener('click', function() {
     changeLink();
+});
+
+downloadBtn.addEventListener("click", () => {
+    const grille = document.querySelector(".container")
+    html2canvas(grille).then((canvas) => {
+        const base64Image = canvas.toDataURL("image/png");
+        var anchor = document.createElement("a");
+        anchor.setAttribute("href", base64Image);
+        anchor.setAttribute("download", "monstre.png")
+        anchor.click();
+        anchor.remove();
+    })
 });
 
