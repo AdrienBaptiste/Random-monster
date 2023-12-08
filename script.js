@@ -10,7 +10,7 @@ const downloadBtn = document.querySelector(".button_container .telechargerBtn");
 
 
 function randomId () {
-    id = Math.floor(Math.random() * 5);
+    id = Math.floor(Math.random() * 6);
     console.log(id);
 }
 
